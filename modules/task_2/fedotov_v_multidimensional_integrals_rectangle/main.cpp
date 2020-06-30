@@ -9,8 +9,8 @@ TEST(MultiDimensionalIntegralRectangle, func1) {
     double x2 = 2;
     double y1 = 0;
     double y2 = 2;
-    double stepX = 0.01;
-    double stepY = 0.01;
+    double stepX = 0.001;
+    double stepY = 0.001;
     double (*passingFunc)(double, double) = &function1;
     double trueIntegral = 10.67;
     double startTime, endTime;
@@ -28,8 +28,8 @@ TEST(MultiDimensionalIntegralRectangle, func2) {
     double x2 = 3;
     double y1 = 0;
     double y2 = 2;
-    double stepX = 0.01;
-    double stepY = 0.01;
+    double stepX = 0.001;
+    double stepY = 0.001;
     double (*passingFunc)(double, double) = &function2;
     double trueIntegral = 1.59;
     double startTime, endTime;
@@ -47,8 +47,8 @@ TEST(MultiDimensionalIntegralRectangle, func3) {
     double x2 = 4;
     double y1 = -3;
     double y2 = 0;
-    double stepX = 0.01;
-    double stepY = 0.01;
+    double stepX = 0.001;
+    double stepY = 0.001;
     double (*passingFunc)(double, double) = &function3;
     double trueIntegral = -0.34;
     double startTime, endTime;
@@ -66,8 +66,8 @@ TEST(MultiDimensionalIntegralRectangle, func4) {
     double x2 = 6;
     double y1 = 0;
     double y2 = 7;
-    double stepX = 0.01;
-    double stepY = 0.01;
+    double stepX = 0.001;
+    double stepY = 0.001;
     double (*passingFunc)(double, double) = &function4;
     double trueIntegral = 1.76;
     double startTime, endTime;
@@ -80,7 +80,7 @@ TEST(MultiDimensionalIntegralRectangle, func4) {
     ASSERT_NEAR(trueIntegral, integral, 0.1);
 }
 
-TEST(MultiDimensionalIntegralRectangle, DISABLED_func5) {
+TEST(MultiDimensionalIntegralRectangle, func5) {
     double x1 = 2;
     double x2 = 8;
     double y1 = 1;
